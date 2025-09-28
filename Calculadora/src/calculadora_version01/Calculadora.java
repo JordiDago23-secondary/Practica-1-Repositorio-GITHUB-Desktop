@@ -23,16 +23,16 @@ public class Calculadora {
         
         switch(operacion) {
             case "+":
-                
+                /*Falta inplementar en la branch Jordi la operacion Suma*/
                 break;
             case "-":
-                
+            	/*Falta inplementar en la branch Jordi la operacion Resta*/
                 break;
             case "*":
-                
+            	/*Falta inplementar en la branch Julio la operacion Multiplicar*/
                 break;
             case "%":
-                
+            	/*Falta inplementar en la branch Julio la operacion Dividir*/
                 break;
             default:
                 System.out.println("Operación no válida.");
