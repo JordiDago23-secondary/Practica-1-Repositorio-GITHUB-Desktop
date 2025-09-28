@@ -23,10 +23,10 @@ public class Calculadora {
         
         switch(operacion) {
             case "+":
-            	resultado = Suma(Valor1, Valor2, resultado); 
+                /*Falta inplementar en la branch Jordi la operacion Suma*/
                 break;
             case "-":
-            	resultado = Resta(Valor1, Valor2, resultado);
+            	/*Falta inplementar en la branch Jordi la operacion Resta*/
                 break;
             case "*":
             	/*Falta inplementar en la branch Julio la operacion Multiplicar*/
@@ -41,13 +41,4 @@ public class Calculadora {
         scan.close();
 	}
 	
-	private static int Suma (int suma1, int suma2, int resultado ){
-        resultado = suma1 + suma2;
-        return resultado;
-    }
-    
-    private static int Resta (int resta1, int resta2, int resultado){
-        resultado = resta1 - resta2;
-        return resultado;
-    }
 }
