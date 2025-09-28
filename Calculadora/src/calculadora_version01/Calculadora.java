@@ -24,35 +24,29 @@ public class Calculadora {
         switch(operacion) {
             case "+":
                 /*Falta inplementar en la branch Jordi la operacion Suma*/
+            	resultado = Suma(Valor1, Valor2, resultado); 
                 break;
             case "-":
             	/*Falta inplementar en la branch Jordi la operacion Resta*/
+            	resultado = Resta(Valor1, Valor2, resultado);
                 break;
             case "*":
-            	resultado = Multiplicar(Valor1, Valor2, resultado);
                 break;
             case "%":
-            	if (Valor2 != 0) {
-                    resultado = Dividir(Valor1, Valor2, resultado);
-                } else {
-                    System.out.println("Error: no se puede dividir entre 0");
-                }
                 break;
             default:
                 System.out.println("Operación no válida.");
         }
-        System.out.println("El resultado es: "+ resultado);
         scan.close();
 	}
 	
-	private static int Multiplicar(int multi1, int multi2, int resultado) {
-        resultado = multi1 * multi2;
+	private static int Suma (int suma1, int suma2, int resultado ){
+        resultado = suma1 + suma2;
         return resultado;
     }
     
-    private static int Dividir(int div1, int div2, int resultado) {
-        resultado = div1 / div2;
+    private static int Resta (int resta1, int resta2, int resultado){
+        resultado = resta1 - resta2;
         return resultado;
     }
-	
 }
